@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<body>
+
+	<h1>ОЧКИ</h1>
+	<h1 class="score">0</h1>
+	<div class="">
+		<div style="background-image: url(elephant.jpg); position: absolute; bottom: 300px; right: 100px; width: 300px; height: 300px; background-size: 100% 100%" class="elephant"></div>
+		<div style="background-image: url(antilop.jpg); position: absolute; left: 0px; width: 300px; height: 300px; background-size: 100% 100% " class="antilop"></div>
+		<div style="background-image: url(korova.jpg); position: absolute; left: 800px; bottom: 200px; width: 300px; height: 300px; background-size: 100% 100%" class="korova"></div>
+		<div style="background-image: url(begemot.jpg); position: absolute; right: 10px; bottom: 10px; left: 100px; width: 300px; height: 300px; background-size: 100% 100%" class="begemot"></div>
+		<div style="background-image: url(giena.jpg); position: absolute; left: 500px; width: 300px; height: 300px; background-size: 100% 100%" class="giena"></div>
+		<div style="background-image: url(lion.jpg); position: absolute; left: 500px; bottom: 5px; width: 300px; height: 300px; background-size: 100% 100%" class="lion"></div>
+		<div style="background-image: url(jiraf.jpg); position: absolute; left: 1000px; bottom: 5px; width: 300px; height: 300px; background-size: 100% 100%" class="jiraf"></div>
+		<div style="background-image: url(nosorog.jpg); position: absolute; left: 400px; bottom: 400px; width: 300px; height: 300px; background-size: 100% 100%" class="nosorog"></div>
+	</div>
+	<h2 style="margin-left: auto; margin-right: auto">гДЕ П</h2>
+	<div style="background-image: url(eleph.png); position: absolute; bottom: 300px; right: 100px; width: 300px; height: 300px; background-size: 100% 100%; display: none;" class="elephant"></div>
+
+<script type="text/javascript">
+
+	let score = 100
+
+
+
+	let no = function (){
+	alert("не")
+}
+	let liana = function (){
+	document.querySelector(".elephant").style.background = "black"
+	document.querySelector(".antilop").style.background = "black"
+	document.querySelector(".korova").style.background = "black"
+	document.querySelector(".begemot").style.background = "black"
+	document.querySelector(".giena").style.background = "black"
+	document.querySelector(".lion").style.background = "black"
+	document.querySelector(".jiraf").style.background = "black"
+	document.querySelector(".nosorog").style.background = "black"
+
+}
+	setTimeout(liana, 5000);
+
+	let elep = function(){
+		document.querySelector(".eleph").style.display = "block"
+	}
+
+	setTimeout(elep, 5000)
+
+	document.querySelector(".elephant").onclick = no
+	document.querySelector(".antilop").onclick = no
+	document.querySelector(".korova").onclick = no
+	document.querySelector(".begemot").onclick = no
+	document.querySelector(".giena").onclick = no
+	document.querySelector(".lion").onclick = no
+	document.querySelector(".jiraf").onclick = no
+	document.querySelector(".nosorog").onclick = no
+
+
+
+	document.querySelector(".score").innerHTML = score
+
+</script>
+
+</body>
+</html>
